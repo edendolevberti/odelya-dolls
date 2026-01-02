@@ -1,6 +1,8 @@
 import React from 'react';
-import { PRODUCTS, WHATSAPP_LINK } from '../constants';
+import { WHATSAPP_LINK } from '../constants';
 import { ShoppingBag, Sparkles } from 'lucide-react';
+import { products } from '../products';
+import { Product } from '../types';
 
 export const Gallery: React.FC = () => {
   return (
@@ -34,7 +36,7 @@ export const Gallery: React.FC = () => {
 
         {/* Grid with cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12">
-          {PRODUCTS.map((product) => (
+          {products.map((product) => (
             <div key={product.id} className="bg-white rounded-[2.5rem] overflow-hidden shadow-xl hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 group flex flex-col border-2 border-white ring-1 ring-rose-100/50 relative">
               
               {/* Image Container */}

@@ -15,7 +15,7 @@ export const About: React.FC = () => {
              <div className="absolute inset-0 bg-rose-100 rounded-[2rem] transform rotate-3 group-hover:rotate-6 transition-transform duration-500 opacity-60"></div>
              <div className="absolute inset-0 bg-yellow-100 rounded-[2rem] transform -rotate-2 group-hover:-rotate-4 transition-transform duration-500 opacity-60"></div>
              <img 
-               src="https://picsum.photos/seed/odelia_working/600/600" 
+               src="https://i.postimg.cc/zDFtSjjK/about-pic.jpg" 
                alt="Odelia crocheting" 
                className="relative rounded-[2rem] shadow-xl w-full h-auto object-cover transform transition-transform duration-500 z-10"
              />

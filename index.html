@@ -20,6 +20,9 @@
               'pastel-green': '#dcfce7',
               'pastel-yellow': '#fef9c3',
               'warm-brown': '#78350f',
+            },
+            animation: {
+              'bounce-slow': 'bounce 3s infinite',
             }
           }
         }
@@ -31,6 +34,30 @@
       }
       .blob-shape {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      }
+      
+      /* Infinite Scroll Animations */
+      @keyframes scroll-left {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+      }
+      
+      .animate-scroll-left {
+        animation: scroll-left 40s linear infinite;
+      }
+      
+      /* Pause animation on hover */
+      .hover-pause:hover .animate-scroll-left {
+        animation-play-state: paused;
+      }
+
+      /* Hide scrollbar */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
       }
     </style>
   <script type="importmap">
